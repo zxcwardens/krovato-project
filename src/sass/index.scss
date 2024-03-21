@@ -1,1 +1,15 @@
-// @import './utils/varlibers.scss';
+@import './common/reset';
+@import './common/base';
+@import './utils/mixin';
+@import './utils/placeholder';
+@import './utils/variable';
+@import './partials/repeat-section/header';
+@import './partials/main-page/slider';
+@import './partials/main-page/popular__category'; 
+@import './partials/main-page/popular__product'; 
+@import './partials/main-page/discount';
+@import './partials/repeat-section/last__reviews'; 
+@import './partials/main-page/last__news.html'; 
+@import './partials/main-page/about.html'; 
+@import './partials/repeat-section/advantages.html'; 
+@import './partials/repeat-section/footer.html' 

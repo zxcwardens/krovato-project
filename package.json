@@ -1,14 +1,12 @@
 {
-  "name": "",
+  "name": "krovato-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/krovato-project/",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "preview": "vite preview"
   },
   "devDependencies": {
     "glob": "^8.1.0",
@@ -17,7 +15,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "modern-normalize": "^2.0.0",
     "swiper": "^10.3.1",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"

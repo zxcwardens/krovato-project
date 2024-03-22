@@ -14,5 +14,5 @@ input: glob.sync('./src/*.html'),
 },
 outDir: '../dist',
 },
-plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
+plugins: [injectHTML(), FullReload(['./src/index.html'])],
 })

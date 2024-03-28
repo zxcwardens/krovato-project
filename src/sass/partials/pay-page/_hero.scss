@@ -8,13 +8,20 @@
     align-items: center;
 }
 
-.pay__main-link { 
+.pay__main-link {
     color: $dark;
-font-family: "Proxima Nova";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 30px; /* 187.5% */
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 187.5% */
+    transition-property: color;
+    transition-duration: 250ms;
+}
+
+.pay__main-link:hover { 
+    color: $yellow;
 }
 
 .pay__icon { 

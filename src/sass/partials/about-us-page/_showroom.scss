@@ -67,7 +67,18 @@
         align-items: center;
         gap: 10px;
         border-radius: 8px;
+        // transform: rotate(0);
+        // transition-property: transform;
+        // transition-duration: 5s;
+        animation-name: showroom-button;
+        animation-duration: 5s;
+        animation-delay: 5s;
+        animation-iteration-count: infinite;
     }
+
+    // &__button:hover { 
+    //     transform: rotate(360deg);
+    // }
 
     &__button-text {
         color: #FFF;
@@ -84,5 +95,23 @@
         height: 12px;
         fill: white;
         padding-bottom: 3px;
+    }
+}
+
+@keyframes showroom-button {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(0.3);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }

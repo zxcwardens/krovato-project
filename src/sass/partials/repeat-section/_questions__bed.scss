@@ -23,11 +23,19 @@
 }
 
 .questions__item { 
+    position: relative;
     max-width: 1070px;
     padding: 15px;
     border-radius: 8px;
     background: #FFF;
+    border: 2px solid transparent;
     box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
+    transition-property: border;
+    transition-duration: 500ms;
+}
+
+.questions__item:hover { 
+    border: 2px solid #FFBC57;
 }
 
 .questions__input {
@@ -41,8 +49,37 @@
     align-items: center;
 }
 
+.questions__label::after {
+    content: '';
+    background-image: url(../../../images/card-catalog/phone/arrow-bottom@1X.webp);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../../images/card-catalog/phone/arrow-bottom@2X.webp);
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../../../images/card-catalog/arrow-bottom@1X.webp);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../../images/card-catalog/arrow-bottom@2X.webp);
+    }
+  }
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-color: #FFF;
+    width: 34px;
+    height: 34px;
+}
+
 .questions__icon { 
     fill: #FFBC57;
+    width: 40px;
+    height: 40px;
 }
 
 .questions__text { 
@@ -50,6 +87,9 @@
 }
 
 .questions__icon-arrow {
+    width: 34px;
+    height: 34px;
+fill: #2B2929;
 margin-right: 0;
 margin-left: auto;
 }
@@ -80,8 +120,26 @@ line-height: 30px; /* 187.5% */
     transition: all 0.35s;
 }
 
-.questions__item input:checked ~ .questions__paragraph {
+.questions__item .questions__input:checked ~ .questions__paragraph {
     max-height: 100px;
     display: block;
     transition: all 0.35s;
+}
+
+.questions__input:checked + .questions__label::after {
+    content: '';
+    background-image: url(../../../images/card-catalog/phone/arrow-top@1X.webp);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../../images/card-catalog/phone/arrow-top@2X.webp);
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../../../images/card-catalog/arrow-top@1X.webp);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../../images/card-catalog/arrow-top@2X.webp);
+    }
+  }
 }
